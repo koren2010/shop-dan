@@ -1,4 +1,4 @@
-package com.danko.cartbackend.entity;
+package com.danko.shop.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

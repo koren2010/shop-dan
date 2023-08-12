@@ -1,0 +1,13 @@
+
+.item{
+    margin: 20px;
+    padding: 30px;
+    border-style:dotted;
+    border-radius: 20%;
+    background-color: black;
+}
+
+
+img{
+    width: 100px;;
+}

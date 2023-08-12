@@ -1,13 +1,13 @@
-package com.danko.cartbackend;
+package com.danko.shop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CartBackendApplication {
+public class ShopApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CartBackendApplication.class, args);
+		SpringApplication.run(ShopApplication.class, args);
 	}
 
 }

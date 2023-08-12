@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Item from "./Item";
 import axios from "axios";
 
 import "./Cart.css";
+import CartItem from "./CartItem";
 // import { loadCart } from "../utils/utils";
 
 const url = "http://localhost:8080/cart";
@@ -20,7 +20,7 @@ const Cart = () => {
   return (
     <div className="cart">
       {items.map((item, index) => (
-        <Item name={item.name} count={item.count} key={index} />
+        <CartItem item={item.item} count={item.count} key={index} />
       ))}
     </div>
   );

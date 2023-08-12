@@ -1,5 +1,5 @@
-import Cart from "./components/Cart";
-import Shop from "./components/Shop";
+import Cart from "./components/cart/Cart";
+import Shop from "./components/shop/Shop";
 
 function App() {
   return (
