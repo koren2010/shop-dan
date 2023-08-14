@@ -6,11 +6,12 @@ const url = "http://localhost:8080/cart";
 
 export default function ItemForSale({ name, desc, price, img }) {
   return (
-    <div className="item">
+    <div className="item border border-primary m-3 p-4">
       <h2>{name}</h2>
-      <img src={img} alt={name} />
+      {/* className="img-fluid" */}
+      <img  src={img} alt={name} />
       <p>{desc}</p>
-      <span>{price}</span>
+      <span>{price}$</span>
       <div className="btn-group">
         <button className="btn btn-outline-secondary" onClick={removeFromCart}>
           -

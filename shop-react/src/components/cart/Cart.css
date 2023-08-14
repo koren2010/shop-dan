@@ -1,7 +1,5 @@
-.cart{
-    margin: 20px;
-    padding: 20px;
-    background-color: gray;
-    width: auto;
-    align-items: center;
+.cart {
+  background-color: #413939;
+  width: auto;
+  align-items: center;
 }

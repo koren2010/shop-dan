@@ -1,13 +1,7 @@
-
-.item{
-    margin: 20px;
-    padding: 30px;
-    border-style:dotted;
-    border-radius: 20%;
-    background-color: black;
+.item {
+  background-color: #393c41;
 }
 
-
-img{
-    width: 100px;;
+img {
+  width: 100px;
 }

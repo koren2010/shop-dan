@@ -1,3 +1,4 @@
-.name, .count {
+.name, .count, .total-price {
     margin: 10px;
+    padding: 20px;
 }

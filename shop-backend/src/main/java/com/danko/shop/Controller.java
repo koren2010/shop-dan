@@ -56,9 +56,16 @@ public class Controller {
 		cartRepo.deleteById(itemId);
 	}
 	
+//	@PutMapping(value = "/cart")
+//	public void updateItem(int itemId, int count) {
+//		deleteItem(itemId);
+//		addItemToCart(itemId, count);
+//	}
+//	
 	@PutMapping(value = "/cart")
-	public void updateItem(int itemId, int count) {
-		deleteItem(itemId);
-		addItemToCart(itemId, count);
+	public void updateCart(List<CartItem> cart) {
+		for (CartItem item : cart) {
+			cartRepo.save(item);
+		}
 	}
 }

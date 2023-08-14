@@ -9,21 +9,27 @@ export default function Shop() {
   const [itemsForSale, setItemsForSale] = useState([]);
 
   useEffect(() => {
-    axios.get(url).then((res) => setItemsForSale(res.data));
+    axios
+      .get(url)
+      .then((res) => setItemsForSale(res.data))
+      .catch(() => console.log("cant get items from server"));
   }, []);
 
   return (
-    <div className="shop text-center">
-      {itemsForSale.map((item, index) => (
+    // {items ? : }
+    <div className="shop container-fluid text-center justify-content-center">
+      {/* <div className="row"> */}
+      {itemsForSale.map((item) => (
         <ItemForSale
-          className="item"
+          className="item col"
           name={item.name}
           desc={item.description}
           img={item.img}
           price={item.price}
-          key={index}
+          key={item.id}
         />
       ))}
+      {/* </div> */}
     </div>
   );
 }

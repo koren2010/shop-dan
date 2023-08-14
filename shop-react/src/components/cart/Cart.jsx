@@ -7,6 +7,8 @@ import CartItem from "./CartItem";
 
 const url = "http://localhost:8080/cart";
 
+// const timeoutId;
+
 const Cart = () => {
   const [items, setItems] = useState([]);
 
@@ -14,13 +16,33 @@ const Cart = () => {
   // useEffect(loadCart, []);
 
   useEffect(() => {
-    axios.get(url).then((res) => setItems(res.data));
+    axios
+      .get(url)
+      .then((res) => setItems(res.data))
+      .catch(() => console.log("cant get cart from server"));
   }, []);
 
+  // useEffect(() => {
+  //   // wait 5 seconds
+  //   setTimeout(() => {
+  //     clearTimeout(this);
+  //     axios.put(url, items);
+  //   }, 5000);
+  // }, items);
+
+  // timeoutId = setTimeout(() => {
+  //   saveCart();
+  // }, 5*1000);
+
   return (
-    <div className="cart">
+    <div className="cart m-3 p-3">
       {items.map((item, index) => (
-        <CartItem item={item.item} count={item.count} key={index} />
+        <CartItem
+          className="text-center"
+          item={item.item}
+          count={item.count}
+          key={index}
+        />
       ))}
     </div>
   );
@@ -31,6 +53,10 @@ const Cart = () => {
 //     console.log(res.data);
 //     // setItems(res.data);
 //   });
+// }
+
+// function updateCart() {
+//   axios.put(url, items);
 // }
 
 export default Cart;
