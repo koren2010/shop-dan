@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.danko.shop.entity.CartItem;
@@ -45,7 +47,7 @@ public class Controller {
 	
 	
 	@PostMapping(value = "/cart")
-	public void addItemToCart(int itemId, int count) {
+	public void addItemToCart(@RequestParam int itemId, @RequestParam int count) {
 		cartRepo.save(new CartItem(shopRepo.findById(itemId).get(), count));
 
 //		cartRepo.save(new CartItem(itemId, 1));

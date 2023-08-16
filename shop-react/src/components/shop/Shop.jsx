@@ -22,6 +22,7 @@ export default function Shop() {
       {itemsForSale.map((item) => (
         <ItemForSale
           className="item col"
+          id={item.id}
           name={item.name}
           desc={item.description}
           img={item.img}

@@ -1,3 +1,4 @@
 [{"price":1.99, "description":"super healthy", "img":"https://healthybuddha.in/image/cache/catalog/applegala-500x515.jpg", "name":"apple"},
  {"price":2.99, "description":"dont eat too much!", "img":"https://img.imageboss.me/fourwinds/width/425/dpr:2/shop/products/blackmonukka.jpg?v=1538780984", "name":"grapes"},
- {"price":3.99, "description":"yellow and yummy", "img":"https://media.istockphoto.com/id/173242750/photo/banana-bunch.jpg?s=612x612&w=0&k=20&c=MAc8AXVz5KxwWeEmh75WwH6j_HouRczBFAhulLAtRUU=", "name":"banana"}]
+ {"price":3.99, "description":"yellow and yummy", "img":"https://media.istockphoto.com/id/173242750/photo/banana-bunch.jpg?s=612x612&w=0&k=20&c=MAc8AXVz5KxwWeEmh75WwH6j_HouRczBFAhulLAtRUU=", "name":"banana"},
+ {"price":4.99, "description":"pop", "img":"https://freshji.in/wp-content/uploads/2020/09/Spinach-1.jpg", "name":"spinach"}]

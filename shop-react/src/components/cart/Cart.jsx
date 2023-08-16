@@ -36,12 +36,13 @@ const Cart = () => {
 
   return (
     <div className="cart m-3 p-3">
-      {items.map((item, index) => (
+      {items.map((item) => (
         <CartItem
+          id={item.id}
           className="text-center"
           item={item.item}
           count={item.count}
-          key={index}
+          key={item.id}
         />
       ))}
     </div>
